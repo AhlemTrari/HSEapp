@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Déclarations d'Accident de Matériel | APMC Divindus</title>
+    <title>Médcine de travail | APMC Divindus</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -15,29 +18,17 @@
     <!-- Waves Effect Css -->
     <link href="../../../plugins/node-waves/waves.css" rel="stylesheet" />
 
-    <!--WaitMe Css-->
-    <link href="../../../plugins/waitme/waitMe.css" rel="stylesheet" />
-
     <!-- Animation Css -->
     <link href="../../../plugins/animate-css/animate.css" rel="stylesheet" />
-    <link href="../../../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
 
-
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="../../../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
-
-    <!-- Bootstrap DatePicker Css -->
-    <link href="../../../plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="../../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    <!-- JQuery DataTable Css -->
+    <link href="../../../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- Custom Css -->
     <link href="../../../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../../css/themes/all-themes.css" rel="stylesheet" />
-
 </head>
 
 <body class="theme-red">
@@ -248,8 +239,8 @@
                                     <span>Bilan A.M</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="../MT/index.html" >
+                            <li  class="active">
+                                <a href="index.html" >
                                     <span>Médecine de travail</span>
                                 </a>
                             </li>
@@ -268,8 +259,8 @@
                                     <span>D.A.T</span>
                                 </a>
                             </li>
-                            <li class="active">
-                                <a href="index.html">
+                            <li>
+                                <a href="../DAM/index.html">
                                     <span>D.A.M</span>
                                 </a>
                             </li>
@@ -468,401 +459,42 @@
 
     <section class="content">
         <div class="container-fluid">
+           
             <div class="row">
-                <div class="card">
-                    <div class="header bg-blue-grey">
-                        <center>
-                        <h2>
-                            Identité du Responsable d’Accident
-                        </h2>
-                         </center>
-                        <ul class="header-dropdown m-r--5">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="timer" data-loading-color="lightBlue">
-                                    <i class="material-icons">loop</i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row clearfix">
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control">
-                                        <label class="form-label">Nom</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-sm-5">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control">
-                                        <label class="form-label">Prénom</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group">
-                                    <div class="form-line" id="bs_datepicker_container">
-                                        <input type="text" class="form-control" placeholder="Date de naissance ">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="form-group">
-                                    <div class="form-line" id="bs_datepicker_container">
-                                        <input type="text" class="form-control" placeholder="Date de recrutement">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control">
-                                        <label class="form-label">Qualification professionnelle</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="card">
-                    <div class="header bg-light-green"> 
-                        <!-- bg-light-blue -->
-                        <center>
-                        <h2>
-                            Accident
-                        </h2>
-                        </center>
-                        <ul class="header-dropdown m-r--5">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="timer" data-loading-color="lightBlue">
-                                    <i class="material-icons">loop</i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="body">                   
-                        <div class="row clearfix">
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group ">
-                                    <div class="form-line">
-                                        <label class="form-label">L’accident à t-il fait d’autres victimes ?</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="demo-radio-button">
-                                    <input name="group4" type="radio" id="radio_7" class="radio-col-teal" />
-                                    <label for="radio_7">Oui</label>
-                                    <input name="group4" type="radio" id="radio_8" class="radio-col-teal" />
-                                    <label for="radio_8">Non</label>
-                                    </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control">
-                                        <label class="form-label">Lieu exact de l’accident</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" class="datepicker form-control" placeholder="Date">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <input type="text" class="timepicker form-control" placeholder="Heure">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <textarea rows="1" class="form-control no-resize auto-growth" placeholder="Que faisait la victime au moment de l’accident ?"></textarea>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control">
-                                        <label class="form-label">Eléments matériels à l’origine de l’accident</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-            
-            <div class="row">
-                <div class="card">
-                    <div class="header bg-blue-grey"> 
-                        <!-- bg-light-blue -->
-                        <center>
-                        <h2>
-                            Causes de l'accident
-                        </h2>
-                        </center>
-                        <ul class="header-dropdown m-r--5">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="timer" data-loading-color="lightBlue">
-                                    <i class="material-icons">loop</i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group">
-                                    <center><label> Directes </label></center>
-                                    <div class="form-line">
-                                        <textarea rows="1" class="form-control no-resize auto-growth" placeholder="Causes directes"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="form-group">
-                                    <center><label> Indirectes </label></center>
-                                    <div class="form-line">
-                                        <textarea rows="1" class="form-control no-resize auto-growth" placeholder="Causes indirectes"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <textarea rows="1" class="form-control no-resize auto-growth" placeholder="Conséquences"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group ">
-                                    <div class="form-line">
-                                        <label class="form-label">L’accident a-t-il été causé par un tiers ?</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="demo-radio-button">
-                                    <input name="group4" type="radio" id="radio_4" class="radio-col-teal" onclick="javascript:coordonnees();"/>
-                                    <label for="radio_4">Oui</label>
-                                    <input name="group4" type="radio" id="radio_5" class="radio-col-teal" onclick="javascript:coordonnees();"/>
-                                    <label for="radio_5">Non</label>
-                                    </div>
-                            </div>
-                            <div id="tiers">
-                                <div class="col-sm-offset-2">
-                                    <label> Coordonnées du tiers </label>
-                                </div>
-                                <div class="col-sm-offset-1 col-sm-5">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control">
-                                            <label class="form-label">Nom</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" col-sm-5">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control">
-                                            <label class="form-label">Prénom</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-offset-1 col-sm-5">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control">
-                                            <label class="form-label">Adresse</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <div class="header bg-light-green">
-                        <center>
-                        <h2>
-                            Témoins
-                        </h2>
-                        </center>
-                        <ul class="header-dropdown m-r--5">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="rotation" data-loading-color="lightGreen">
-                                    <i class="material-icons">loop</i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <textarea rows="1" class="form-control no-resize auto-growth" placeholder="Nom et prénom des témoins"></textarea>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="col-sm-offset-1 col-sm-5">
-                                <div class="form-group ">
-                                    <div class="form-line">
-                                        <label class="form-label">Existe-t-il une constatation de police ?</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="demo-radio-button">
-                                    <input name="group4" type="radio" id="radio_2" class="radio-col-teal" onclick="javascript:constatation();"/>
-                                    <label for="radio_2">Oui</label>
-                                    <input name="group4" type="radio" id="radio_3" class="radio-col-teal" onclick="javascript:constatation();"/>
-                                    <label for="radio_3">Non</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-5" id="constatation" style="display: none;">
-                                <div class="form-group form-float">
-                                    <div class="form-line">
-                                        <input type="text" class="form-control">
-                                        <label class="form-label">Laquelle / où?</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="card">
-                    <div class="header bg-blue-grey">
-                        <center>
-                        <h2>
-                            Circonstances détaillées de l’accident
-                        </h2>
-                        </center>
-                        <ul class="header-dropdown m-r--5">
-                            <li>
-                                <a href="javascript:void(0);" data-toggle="cardloading" data-loading-effect="pulse" data-loading-color="amber">
-                                    <i class="material-icons">loop</i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="body">
-                        <div class="row">
-                            <div class="col-sm-offset-1 col-sm-10">
-                                <div class="form-group">
-                                    <div class="form-line">
-                                        <textarea rows="1" class="form-control no-resize auto-growth" placeholder="Circonstances détaillées de l’accident"></textarea>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row clearfix demo-button-sizes">
-                <div class="col-md-offset-8 col-md-2">
-                    <button href="index.html" type="button" class="btn btn-default btn-block btn-lg waves-effect">Annuler</button>
-                </div>
-                <div class="col-md-2">
-                    <button type="button" class="btn bg-teal btn-block btn-lg waves-effect">Valider</button>
-                </div>
-            </div>
-            <div class="row">
-                <br/><br/>
-            </div>
         </div>
     </section>
 
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('constatation').style.display = 'none';
-        
-        }
-        function constatation() {
-            if (document.getElementById('radio_2').checked) {
-                document.getElementById('constatation').style.display = 'block';
-            } 
-            else{
-                document.getElementById('constatation').style.display = 'none';
-            }
-        }
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('tiers').style.display = 'none';
-        
-        }
-        function coordonnees() {
-            if (document.getElementById('radio_4').checked) {
-                document.getElementById('tiers').style.display = 'block';
-            } 
-            else{
-                document.getElementById('tiers').style.display = 'none';
-            }
-        }
-    </script>
-     <!-- Jquery Core Js -->
-     <script src="../../../plugins/jquery/jquery.min.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="../../../plugins/jquery/jquery.min.js"></script>
 
-     <!-- Bootstrap Core Js -->
-     <script src="../../../plugins/bootstrap/js/bootstrap.js"></script>
- 
-     <!-- Select Plugin Js -->
-     <script src="../../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
- 
-     <!-- Slimscroll Plugin Js -->
-     <script src="../../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
- 
-     <!-- Waves Effect Plugin Js -->
-     <script src="../../../plugins/node-waves/waves.js"></script>
- 
-     <!-- Autosize Plugin Js -->
-    <script src="../../../plugins/autosize/autosize.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="../../../plugins/bootstrap/js/bootstrap.js"></script>
 
-    <!-- Moment Plugin Js -->
-    <script src="../../../plugins/momentjs/moment.js"></script>
+    <!-- Select Plugin Js -->
+    <script src="../../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
-    <!-- Bootstrap Material Datetime Picker Plugin Js -->
-    <script src="../../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
- 
-     <!-- Jquery Spinner Plugin Js -->
-     <script src="../../../plugins/jquery-spinner/js/jquery.spinner.js"></script>
- 
-     <!-- Wait Me Plugin Js -->
-    <script src="../../../plugins/waitme/waitMe.js"></script>
+    <!-- Slimscroll Plugin Js -->
+    <script src="../../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Bootstrap Datepicker Plugin Js -->
-    <script src="../../../plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
- 
-     <!-- Custom Js -->
-     <script src="../../../js/admin.js"></script>
-     <script src="../../../js/pages/cards/colored.js"></script>    
-    <script src="../../../js/pages/forms/basic-form-elements.js"></script>
-    <script src="../../js/pages/forms/advanced-form-elements.js"></script>
- 
-     <!-- Demo Js -->
-     <script src="../../../js/demo.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../../plugins/node-waves/waves.js"></script>
 
- </body>
- 
- </html>
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="../../../plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="../../../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../../js/admin.js"></script>
+    <script src="../../../js/pages/tables/jquery-datatable.js"></script>
+
+    <!-- Demo Js -->
+    <script src="../../../js/demo.js"></script>
+</body>
+
+</html>
