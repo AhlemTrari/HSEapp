@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Déclarations d'Accident de Materiel | APMC Divindus</title>
+    <title>Plan d'Hygiène et de Sécurité | APMC Divindus</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -18,14 +20,15 @@
 
     <!-- Animation Css -->
     <link href="../../../plugins/animate-css/animate.css" rel="stylesheet" />
-    <link href="../../../plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- JQuery DataTable Css -->
+    <link href="../../../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- Custom Css -->
     <link href="../../../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../../css/themes/all-themes.css" rel="stylesheet" />
-
 </head>
 
 <body class="theme-red">
@@ -215,59 +218,59 @@
                 <ul class="list">
                     <li class="header">MENU</li>
                     <li>
-                        <a href="../../dashboard.html">
+                        <a href="../dashboard.html">
                             <i class="material-icons">home</i>
                             <span>Acceuil</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">security</i>
                             <span>HSE</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../BAT/index.html">
+                                <a href="../HSE/BAT/index.html">
                                     <span>Bilan des accidents de travail</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../BAM/index.html">
+                                <a href="../HSE/BAM/index.html">
                                     <span>Bilan A.M</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../MT/index.html" >
+                                <a href="../HSE/MT/index.html" >
                                     <span>Médecine de travail</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../CHS/index.html">
+                                <a href="../HSE/CHS/index.html">
                                     <span>Commission d'unité Hygiène et Sécurité</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../PHS/index.html">
+                                <a href="index.html">
                                     <span>Plan d'Hygiène et de Sécurité</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../DAT/index.html">
+                                <a href="../HSE/DAT/index.html">
                                     <span>D.A.T</span>
                                 </a>
                             </li>
-                            <li class="active">
-                                <a href="index.html">
+                            <li>
+                                <a href="../HSE/DAM/index.html">
                                     <span>D.A.M</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../IHSE/index.html">
+                                <a href="../HSE/IHSE/index.html">
                                     <span>Induction HSE</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="../MLCI/index.html">
+                                <a href="../HSE/MLCI/index.html">
                                     <span>MLCI</span>
                                 </a>
                             </li>
@@ -287,19 +290,19 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../../biblio.html">
+                        <a href="../biblio.html">
                             <i class="material-icons col-amber">donut_large</i>
                             <span>Bibliothèque</span>
                         </a>
                     </li>
                     <li>
-                        <a href="../../cartes.html">
+                        <a href="../cartes.html">
                             <i class="material-icons col-light-blue">donut_large</i>
                             <span>Cartes</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="../../SMHSE/index.html">
+                    <li  class="active">
+                        <a href="index.html">
                             <i class="material-icons col-red">donut_large</i>
                             <span>S.M.HSE</span>
                         </a>
@@ -467,35 +470,31 @@
         </div>
     </section>
 
-        <!-- Jquery Core Js -->
-        <script src="../../../plugins/jquery/jquery.min.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="../../../plugins/jquery/jquery.min.js"></script>
 
-        <!-- Bootstrap Core Js -->
-        <script src="../../../plugins/bootstrap/js/bootstrap.js"></script>
-    
-        <!-- Select Plugin Js -->
-        <script src="../../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
-    
-        <!-- Slimscroll Plugin Js -->
-        <script src="../../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
-    
-        <!-- Waves Effect Plugin Js -->
-        <script src="../../../plugins/node-waves/waves.js"></script>
-    
-        <!-- Editable Table Plugin Js -->
-        <script src="../../../plugins/editable-table/mindmup-editabletable.js"></script>
-    
-        <!-- Jquery Spinner Plugin Js -->
-        <script src="../../../plugins/jquery-spinner/js/jquery.spinner.js"></script>
-    
-    
-        <!-- Custom Js -->
-        <script src="../../../js/admin.js"></script>
-        <script src="../../../js/pages/tables/editable-table.js"></script>
-    
-        <!-- Demo Js -->
-        <script src="../../../js/demo.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="../../../plugins/bootstrap/js/bootstrap.js"></script>
 
-    </body>
-    
-    </html>
+    <!-- Select Plugin Js -->
+    <script src="../../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="../../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../../plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="../../../plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="../../../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../../js/admin.js"></script>
+    <script src="../../../js/pages/tables/jquery-datatable.js"></script>
+
+    <!-- Demo Js -->
+    <script src="../../../js/demo.js"></script>
+</body>
+
+</html>
